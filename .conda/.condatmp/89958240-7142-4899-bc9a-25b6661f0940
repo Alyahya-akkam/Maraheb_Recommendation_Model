@@ -1,0 +1,13 @@
+prefix=c:/Users/scc/Kfupm/term 231/ICS 471/Project/Maraheb_Recommendation_Model/.conda/Library
+exec_prefix=c:/Users/scc/Kfupm/term 231/ICS 471/Project/Maraheb_Recommendation_Model/.conda/Library
+libdir=c:/Users/scc/Kfupm/term 231/ICS 471/Project/Maraheb_Recommendation_Model/.conda/Library/lib
+sharedlibdir=c:/Users/scc/Kfupm/term 231/ICS 471/Project/Maraheb_Recommendation_Model/.conda/Library/lib
+includedir=c:/Users/scc/Kfupm/term 231/ICS 471/Project/Maraheb_Recommendation_Model/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

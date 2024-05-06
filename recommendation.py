@@ -9,10 +9,8 @@ import os
 # Get the current directory
 current_directory = os.getcwd()
 
-# Print the current directory
-print("Current directory:", current_directory)
-
-loaded_model = tf.keras.models.load_model(current_directory+"/Recommendation_model")
+ 
+loaded_model = tf.keras.models.load_model(os.path.join(current_directory, 'Recommendation_model'))
 
 
 def predicting(seeker, events):

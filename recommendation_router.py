@@ -37,6 +37,7 @@ router = APIRouter(prefix="/recommendation")
 
 @router.post("/", response_model=GetTenEventsIds)
 def recommendation(recommendationInfo: RecommendationInformation):
+    
     tenIds = predicting(recommendationInfo.seeker, recommendationInfo.events)
     print(tenIds)
     return GetTenEventsIds(events=tenIds)

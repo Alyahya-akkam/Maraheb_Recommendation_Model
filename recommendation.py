@@ -29,10 +29,14 @@ def predicting(seeker, events):
     dobs = []
     event_ids = []
     seeker_id.append(seeker.seeker_id)
-    category_lists.append(seeker.category_list)
     genders.append(seeker.gender)
     dobs.append(int(seeker.dob.toordinal()))
     seeker_id = seeker_id * len(events)
+    if seeker.category_list !=[]:
+        category_lists.append(seeker.category_list)
+    else:
+        category_lists.append('sports,automotive,entertainment,agriculture,photography,gaming,adventure,food,music,business,fashion,community,literature,health,arts,education,architecture'.split(','))
+        
     category_lists = category_lists * len(events)
     genders = genders * len(events)
     dobs = dobs * len(events)
